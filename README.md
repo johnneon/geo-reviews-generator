@@ -37,12 +37,12 @@ pip install -r requirements.txt
 pip install -e .
 ````
 
-3) Переходим в каталог приложения
+2) Переходим в каталог приложения
 ````bash
 cd app
 ````
 
-Запускаем uvicorn сервер:  
+3) Запускаем uvicorn сервер:  
 
 ````bash
 uvicorn app.main:app
