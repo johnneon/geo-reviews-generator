@@ -11,30 +11,63 @@
 
 ### Приложение
 
-В `app` расположился код нашего Streamlit приложения для демонстрации работы модели.
+В `app` расположился код прототипа нашего приложения для демонстрации работы модели.
+Приложение состоит из двух частей:
+- Оболочка пользователя реализованная на streamlit;
+- Непосредственно сервис генерации отзывов реализованный на FastAPI.
 
-Для корректной работы нужно:
+#### Запуск приложения:
 
-```shell
-# Creating a virtual environment
+После загрузки исходных файлов в диерктории проекта:
+1) Подготавливаем среду 
+````bash
+# Создание виртуального окружения
 python -m venv env
-```
-```shell
-# Activating the virtual environment in Linux
+
+# Активация виртуального окружения в Linux
 source env/bin/activate
-```
-```shell
-# Activating the virtual environment in Windows
+
+# Активация виртуального окружения в Windows
 env\Scripts\activate.bat
-```
-```shell
-# Installing libraries
+
+# Устанавливаем библиотеки
 pip install -r requirements.txt
-```
-```shell
-# Installing local packages
+
+# Устанавливаем локальные пакеты
 pip install -e .
-```
+````
+
+2) Переходим в каталог приложения
+````bash
+cd app
+````
+
+3) Запускаем uvicorn сервер:  
+
+````bash
+uvicorn app.main:app
+````
+Данный сервер доступен по адресу 127.0.0.1:8000 
+Обрабатывает post запросы на http://127.0.0.1:8000/generation следующей структуры:
+
+````
+    rubrics: str # тип организации (магазин, кафе, гостиница...)
+    name_org: str # название организации
+    org_address: str # адрес организации
+    rating: int # оценка организации (от 1 до 5)    
+````
+Ответ содержит:
+
+````
+    'result': str # сгенерированный отзыв
+    'latitude': int # географические широта и
+    'longitude': int # долгота организации
+````
+4) Запускаем streamlit сервер реализующий web-интерфейс 
+
+````bash
+streamlit run appst.pyp
+````
 
 ### Документация
 
