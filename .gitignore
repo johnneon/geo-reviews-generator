@@ -168,3 +168,5 @@ geo-reviews-dataset-2023.tsv
 *.tskv
 *.tsv
 *.tmp
+/env/
+/.quarto/
