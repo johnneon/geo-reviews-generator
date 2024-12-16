@@ -1,6 +1,0 @@
-format:
-  revealjs:
-    theme: solarized
-    transition: fade
-    slide-number: true
-    incremental: true
