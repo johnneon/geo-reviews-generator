@@ -163,6 +163,7 @@ cython_debug/
 .DS_Store
 
 # Data
+/model/train-model-1
 geo-reviews-dataset-2023.tskv
 geo-reviews-dataset-2023.tsv
 *.tskv
