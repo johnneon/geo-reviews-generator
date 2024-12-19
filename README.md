@@ -74,10 +74,6 @@ streamlit run apps.py
 Директория `docs` хранит в себе документацию и презентацию.
 Так же там можно найти наш [план работы](./docs/README.md).
 
-### Модель  
-Дообученная модель лежит на [гугл диске](https://drive.google.com/drive/folders/1z4xLdoiD1VoraeNqk43-UtxBhl4vetNu?usp=drive_link)  
-Ссылка на исходную [модель](https://huggingface.co/ai-forever/rugpt3small_based_on_gpt2)
-
 
 ## Команда:
 1) Ilyin V.B. (https://github.com/Viktor-125142)
