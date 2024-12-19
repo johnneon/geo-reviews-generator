@@ -66,7 +66,7 @@ uvicorn app.main:app
 4) Запускаем streamlit сервер реализующий web-интерфейс 
 
 ````bash
-streamlit run appst.pyp
+streamlit run apps.py
 ````
 
 ### Документация
