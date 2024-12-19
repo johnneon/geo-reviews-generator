@@ -19,7 +19,11 @@
 #### Запуск приложения:
 
 После загрузки исходных файлов в диерктории проекта:
-1) Подготавливаем среду 
+1) Скачиваем итоговую модель 
+https://drive.google.com/file/d/1sLzZBLG1ATn-MkDAsJiJLvR37viLvgtq/view?usp=drive_link
+2) Расспаковываем в каталог ./model
+Итоговый путь к файлам модели должен выглядеть ./model/train-model-2/
+3) Подготавливаем среду 
 ````bash
 # Создание виртуального окружения
 python -m venv env
@@ -37,12 +41,17 @@ pip install -r requirements.txt
 pip install -e .
 ````
 
-2) Переходим в каталог приложения
+4) Отдельно устанавливаем PyThorch.
+
+Комманду для установки на Вашу ОС и аппаратную конфигурацию можно уточнить на сайте PyThorch
+https://pytorch.org/get-started/locally/
+
+5) Переходим в каталог приложения
 ````bash
 cd app
 ````
 
-3) Запускаем uvicorn сервер:  
+6) Запускаем uvicorn сервер:  
 
 ````bash
 uvicorn app.main:app
@@ -63,7 +72,7 @@ uvicorn app.main:app
     'latitude': int # географические широта и
     'longitude': int # долгота организации
 ````
-4) Запускаем streamlit сервер реализующий web-интерфейс 
+7) Запускаем streamlit сервер реализующий web-интерфейс 
 
 ````bash
 streamlit run apps.py

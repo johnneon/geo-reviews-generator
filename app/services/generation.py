@@ -9,9 +9,9 @@ from transformers import (
 def generation(rubrics, name_org, org_address, rating):
     """ Travel time prediction """
     
-    tokenizer = AutoTokenizer.from_pretrained("./model/train-model-1")
+    tokenizer = AutoTokenizer.from_pretrained("./model/train-model-2")
     model = AutoModelForCausalLM.from_pretrained(
-        pretrained_model_name_or_path="./model/train-model-1",
+        pretrained_model_name_or_path="./model/train-model-2",
         torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
     )
     # Перемещение модели на GPU или CPU

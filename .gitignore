@@ -164,6 +164,8 @@ cython_debug/
 
 # Data
 /model/train-model-1
+/model/train-model-2
+/results
 geo-reviews-dataset-2023.tskv
 geo-reviews-dataset-2023.tsv
 *.tskv
