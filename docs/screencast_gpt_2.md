@@ -1,0 +1,12 @@
+<img src="./gpt-2-screencast/1.jpeg" />
+<img src="./gpt-2-screencast/2.jpeg" />
+<img src="./gpt-2-screencast/3.jpeg" />
+<img src="./gpt-2-screencast/4.jpeg" />
+<img src="./gpt-2-screencast/5.jpeg" />
+<img src="./gpt-2-screencast/6.jpeg" />
+<img src="./gpt-2-screencast/7.jpeg" />
+<img src="./gpt-2-screencast/8.jpeg" />
+<img src="./gpt-2-screencast/9.jpeg" />
+<img src="./gpt-2-screencast/10.jpeg" />
+<img src="./gpt-2-screencast/11.jpeg" />
+<img src="./gpt-2-screencast/12.jpeg" />
